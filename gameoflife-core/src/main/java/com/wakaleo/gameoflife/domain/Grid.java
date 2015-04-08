@@ -95,7 +95,7 @@ public class Grid {
     }
 
     public int getHeight() {
-        return cells.length;
+        return cells.length+1; // off by one error
     }
 
     public void setCellAt(final int x, final int y, final Cell cell) {
