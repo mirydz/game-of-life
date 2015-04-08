@@ -5,7 +5,7 @@ import static com.wakaleo.gameoflife.domain.Cell.LIVE_CELL;
 
 public class Grid {
 
-    private static final int DEFAULT_ROW_COUNT = 4; // originally 3
+    private static final int DEFAULT_ROW_COUNT = 3;
     private static final int DEFAULT_COLUMN_COUNT = 3;
 
     private Cell[][] cells;
@@ -95,7 +95,7 @@ public class Grid {
     }
 
     public int getHeight() {
-        return cells.length+1; // off by one error
+        return cells.length;
     }
 
     public void setCellAt(final int x, final int y, final Cell cell) {
